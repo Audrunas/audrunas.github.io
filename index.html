@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Jaunimas gali</title>
+    <style>
+        .my_wrapper {
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            text-align: center;
+            justify-content: center;
+            flex-direction: column;
+        }
+
+        .my_button {
+            background: #ff3454;
+            color: #ffffff;
+            padding: 20px 40px;
+            font-size: 20px;
+            border: 0;
+            border-radius: 20px;
+            transition: transform .6s;
+            margin: 10px;
+        }
+
+        .my_button:hover {
+            transform: scale(2) rotate(360deg);
+        }
+    </style>
+</head>
+<body>
+    <div class="my_wrapper">
+        <h1>Laba diena</h1>
+        <h2>Kaip laikotes?</h2>
+        <p>
+            <button id="mygtukas" class="my_button">Paspausk mane</button>
+        </p>
+    </div>
+
+<script>
+    let my_button = document.querySelector("#mygtukas");
+    let body = document.querySelector("body");
+
+    my_button.addEventListener("click", function() {
+        body.style.backgroundColor = '#'+(Math.random()*0xFFFFFF<<0).toString(16);
+    });
+</script>
+</body>
+</html>

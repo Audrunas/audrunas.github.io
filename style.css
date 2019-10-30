@@ -1,0 +1,23 @@
+.my_wrapper {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.my_button {
+        background: #ff3454;
+        color: #ffffff;
+        padding: 20px 40px;
+        font-size: 20px;
+        border: 0;
+        border-radius: 20px;
+        transition: transform .6s;
+        margin: 10px;
+}
+
+.my_button:hover {
+    transform: scale(2) rotate(360deg);
+}
